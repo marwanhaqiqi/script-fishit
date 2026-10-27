@@ -228,7 +228,7 @@ local FishChanceData = {
 }
 
 -- local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
-local NP = "https://raw.githubusercontent.com/marwanhaqiqi/script-fishit/tree/main/HTM-Script/image-fish-htm/"
+local NP = "https://raw.githubusercontent.com/marwanhaqiqi/script-fishit/main/HTM-Script/image-fish-htm/"
 
 local FishImageURL = {
     ["Frostborn Shark"]          = NP .. "frosbon.png",
