@@ -100,13 +100,16 @@ local SecretFishList = {
     "Astrelle", "Moonwake Ray", "Astralune", "Starglass Guardian", "Pelagon",
     "Crimson Dreadtusk", "Riftborn Arowana", "Overlord Hydra", "Elemental Hydra", "Wintertusk Mammofin",
     "Stormhell Brute", "Pyrocoil", "Ashen Kingfish", "Tribunal Withering Core", "Everbloom", "Mr Money Bags", 
-    "Velobyte", "ShellShock X", "Cenobyte.EXE", "Jellybeam", "GigaByte", "Spiritborn Axolotl", "SweetTooth Gourdling", "Mawsoleum", "Vineyard Kraken", "Soulveil Koi", "Sky Blue Talon Shark", "Midnight Blue Wildes Shark",
+    "Velobyte", "ShellShock X", "Cenobyte.EXE", "Jellybeam", "GigaByte", "Spiritborn Axolotl", 
+    "SweetTooth Gourdling", "Mawsoleum", "Vineyard Kraken", "Soulveil Koi", "Sky Blue Talon Shark", "Midnight Blue Wildes Shark",
+    "Soulwake Express",
 }
 
 local ForgottenList = {
     "Sea Eater", "Thunderzilla", "Iridesca", "Frostbite Leviathan", "Fluorivane", "Cerulean Dragon","Crystalline Behemoth",
     "Trench Warden", "Ragnarex", "Astralune", "Crimson Dreadtusk",
-    "Overlord Hydra", "Elemental Hydra", "Everbloom", "Cenobyte.EXE", "Mawsoleum"
+    "Overlord Hydra", "Elemental Hydra", "Everbloom", "Cenobyte.EXE", "Mawsoleum",
+    "Soulwake Express",
 }
 
 local FishChanceData = {
@@ -225,6 +228,7 @@ local FishChanceData = {
     ["Soulveil Koi"]              = "1 in 2M",
     ["Sky Blue Talon Shark"]      = "1 in 2M",
     ["Midnight Blue Wildes Shark"]= "1 in 2M",
+    ["Soulwake Express"]          = "1 in 18M",
 }
 
 -- local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
@@ -333,6 +337,7 @@ local FishImageURL = {
     ["Soulveil Koi"]             = NP .. "soulveil.png",
     ["Sky Blue Talon Shark"]     = NP .. "skyblue.png",
     ["Midnight Blue Wildes Shark"]= NP .. "skymidnight.png",
+    ["Soulwake Express"]          = NP .. "soulwake.png",
 }
 
 local FishImageURLLower = {}
