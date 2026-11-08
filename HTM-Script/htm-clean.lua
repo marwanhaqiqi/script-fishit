@@ -102,7 +102,7 @@ local SecretFishList = {
     "Stormhell Brute", "Pyrocoil", "Ashen Kingfish", "Tribunal Withering Core", "Everbloom", "Mr Money Bags", 
     "Velobyte", "ShellShock X", "Cenobyte.EXE", "Jellybeam", "GigaByte", "Spiritborn Axolotl", 
     "SweetTooth Gourdling", "Mawsoleum", "Vineyard Kraken", "Soulveil Koi", "Sky Blue Talon Shark", "Midnight Blue Wildes Shark",
-    "Soulwake Express",
+    "Soulwake Express", "Dawnbringer Betta",
 }
 
 local ForgottenList = {
@@ -229,6 +229,7 @@ local FishChanceData = {
     ["Sky Blue Talon Shark"]      = "1 in 2M",
     ["Midnight Blue Wildes Shark"]= "1 in 2M",
     ["Soulwake Express"]          = "1 in 18M",
+    ["Dawnbringer Betta"]         = "1 in 1.25M",
 }
 
 -- local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
@@ -338,6 +339,7 @@ local FishImageURL = {
     ["Sky Blue Talon Shark"]     = NP .. "skyblue.png",
     ["Midnight Blue Wildes Shark"]= NP .. "skymidnight.png",
     ["Soulwake Express"]          = NP .. "soulwake.png",
+    ["Dawnbringer Betta"]         = NP .. "dawnbringer.png",
 }
 
 local FishImageURLLower = {}
