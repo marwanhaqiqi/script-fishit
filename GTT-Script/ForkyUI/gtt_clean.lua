@@ -320,7 +320,8 @@ local ForgottenList = {
 local MutasiList = {
     "Noob", "Fairy Dust", "Holographic", "Gemstone", "Fire", "Color Burn", "Frozen",
     "Galaxy", "BloodMoon", "Binary", "Lightning", "Disco", "Festive", "Radioactive", "Moon Fragment",
-    "Abyssal", "Cosmic", "Equinox", "Glitch", "Aurora", "Midnight", "Elemental", "Solar", "8-Bit", "Invasion", "Haunted", "Bewitched",
+    "Abyssal", "Cosmic", "Equinox", "Glitch", "Aurora", "Midnight", "Elemental", "Solar", "8-Bit",
+    "Invasion", "Haunted", "Bewitched", "Leviathan Rage", "Duskbreaker",
 }
 
 local MutasiFalsePositiveSpecies = {
@@ -331,6 +332,7 @@ local MutasiFalsePositiveSpecies = {
     "aurora manatee",
     "aurora butterfly fish",
     "midnight stars squid",
+    "Leviathan",
 }
 
 local LegendaryCrystalList = {
