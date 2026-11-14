@@ -332,7 +332,11 @@ local MutasiFalsePositiveSpecies = {
     "aurora manatee",
     "aurora butterfly fish",
     "midnight stars squid",
-    "Leviathan",
+    "leviathan",
+    "cosmic blobfish",
+    "cosmic hammerhead shark",
+    "cosmic mutant shark",
+
 }
 
 local LegendaryCrystalList = {
