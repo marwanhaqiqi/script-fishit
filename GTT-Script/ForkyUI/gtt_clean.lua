@@ -308,13 +308,14 @@ local SecretFishList = {
     "Stormhell Brute", "Pyrocoil", "Ashen Kingfish", "Tribunal Withering Core", "Everbloom", "Mr Money Bags", 
     "Velobyte", "ShellShock X", "Cenobyte.EXE", "Jellybeam", "GigaByte", "Spiritborn Axolotl", "SweetTooth Gourdling", 
     "Mawsoleum", "Vineyard Kraken", "Soulveil Koi", "Sky Blue Talon Shark", "Midnight Blue Wildes Shark",
-    "Soulwake Express", "Dawnbringer Betta",
+    "Soulwake Express", "Dawnbringer Betta", "Steamforged Whale", "Elarion",
 }
 
 local ForgottenList = {
     "Sea Eater", "Thunderzilla", "Iridesca", "Frostbite Leviathan", "Fluorivane", "Cerulean Dragon","Crystalline Behemoth",
     "Trench Warden", "Ragnarex", "Astralune", "Crimson Dreadtusk",
     "Overlord Hydra", "Elemental Hydra", "Everbloom", "Cenobyte.EXE", "Mawsoleum", "Soulwake Express",
+    "Elarion",
 }
 
 local MutasiList = {
@@ -461,6 +462,8 @@ local FishChanceData = {
     ["Midnight Blue Wildes Shark"]= "1 in 2M",
     ["Soulwake Express"]          = "1 in 18M",
     ["Dawnbringer Betta"]         = "1 in 1.25M",
+    ["Steamforged Whale"]         = "1 in 5.5M",
+    ["Elarion"]                   = "1 in 35M",
 }
 
 -- local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
@@ -575,6 +578,8 @@ local FishImageURL = {
     ["Midnight Blue Wildes Shark"]= NP .. "skymidnight.png",
     ["Soulwake Express"]          = NP .. "soulwake.png",
     ["Dawnbringer Betta"]         = NP .. "dawnbringer.png",
+    ["Steamforged Whale"]         = NP .. "steamforged.png",
+    ["Elarion"]                   = NP .. "elarion.png",
 }
 
 local FishImageURLLower = {}
