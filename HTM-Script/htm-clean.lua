@@ -344,8 +344,8 @@ local FishImageURL = {
     ["Soulwake Express"]          = NP .. "soulwake.png",
     ["Dawnbringer Betta"]         = NP .. "dawnbringer.png",
     ["Steamforged Whale"]         = NP .. "steamforged.png",
-    ["Seraphyrion"]               = NP .. "seraphyrion.png"
-    ["Pressurized King Crab"]     = NP .. "pressurized.png"
+    ["Seraphyrion"]               = NP .. "seraphyrion.png", 
+    ["Pressurized King Crab"]     = NP .. "pressurized.png",
 }
 
 local FishImageURLLower = {}
