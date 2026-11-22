@@ -308,7 +308,7 @@ local SecretFishList = {
     "Stormhell Brute", "Pyrocoil", "Ashen Kingfish", "Tribunal Withering Core", "Everbloom", "Mr Money Bags", 
     "Velobyte", "ShellShock X", "Cenobyte.EXE", "Jellybeam", "GigaByte", "Spiritborn Axolotl", "SweetTooth Gourdling", 
     "Mawsoleum", "Vineyard Kraken", "Soulveil Koi", "Sky Blue Talon Shark", "Midnight Blue Wildes Shark",
-    "Soulwake Express", "Dawnbringer Betta", "Steamforged Whale", "Seraphyrion",
+    "Soulwake Express", "Dawnbringer Betta", "Steamforged Whale", "Seraphyrion", "Pressurized King Crab",
 }
 
 local ForgottenList = {
@@ -464,6 +464,7 @@ local FishChanceData = {
     ["Dawnbringer Betta"]         = "1 in 1.25M",
     ["Steamforged Whale"]         = "1 in 5.5M",
     ["Seraphyrion"]               = "1 in 35M",
+    ["Pressurized King Crab"]     = "1 in 1.5M",
 }
 
 -- local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
@@ -580,6 +581,7 @@ local FishImageURL = {
     ["Dawnbringer Betta"]         = NP .. "dawnbringer.png",
     ["Steamforged Whale"]         = NP .. "steamforged.png",
     ["Seraphyrion"]               = NP .. "seraphyrion.png",
+    ["Pressurized King Crab"]     = NP .. "pressurized.png",
 }
 
 local FishImageURLLower = {}
