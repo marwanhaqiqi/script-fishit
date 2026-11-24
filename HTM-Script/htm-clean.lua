@@ -17,8 +17,7 @@ local Workspace           = game:GetService("Workspace")
 
 local WEBHOOK_URL           = "https://discord.com/api/webhooks/1557717803132260413/Ck09S5iKXKkbaOWcuY9_7PWiALkEVPeIblOfbfmY34McW-YZs_FV7eJ1UALflFmLCSrR"
 local WEBHOOK_FISH          = "https://discord.com/api/webhooks/1557717803132260413/Ck09S5iKXKkbaOWcuY9_7PWiALkEVPeIblOfbfmY34McW-YZs_FV7eJ1UALflFmLCSrR"
--- local WEBHOOK_CHAT          = "https://discord.com/api/webhooks/1574668939127165071/9SkP-y7fGgsY5tWEdZ-W7K7XMh3cI-f1mcGzqSyGK-IYx3suLEQ3kFDEqFbvYftedMvB"
-local WEBHOOK_CHAT          = "https://discord.com/api/webhooks/1549073045807964263/3fwxUGRWOF1Db1iA1Q7bHBmIzIBs44He_DLtDiPYTEIAXMSFFmEdh9BHDAPDEg4pUfln"
+local WEBHOOK_CHAT          = "https://discord.com/api/webhooks/1574668939127165071/9SkP-y7fGgsY5tWEdZ-W7K7XMh3cI-f1mcGzqSyGK-IYx3suLEQ3kFDEqFbvYftedMvB"
 -- local PROXY                 = "https://square-haze-a007.remediashop.workers.dev"
 local PROXY                 = "https://weyyy-proxy.gallungmarwan147.workers.dev"
 local SCRIPT_ACTIVE         = false
