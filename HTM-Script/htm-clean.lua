@@ -17,13 +17,16 @@ local Workspace           = game:GetService("Workspace")
 
 local WEBHOOK_URL           = "https://discord.com/api/webhooks/1557717803132260413/Ck09S5iKXKkbaOWcuY9_7PWiALkEVPeIblOfbfmY34McW-YZs_FV7eJ1UALflFmLCSrR"
 local WEBHOOK_FISH          = "https://discord.com/api/webhooks/1557717803132260413/Ck09S5iKXKkbaOWcuY9_7PWiALkEVPeIblOfbfmY34McW-YZs_FV7eJ1UALflFmLCSrR"
+-- local WEBHOOK_CHAT          = "https://discord.com/api/webhooks/1574668939127165071/9SkP-y7fGgsY5tWEdZ-W7K7XMh3cI-f1mcGzqSyGK-IYx3suLEQ3kFDEqFbvYftedMvB"
+local WEBHOOK_CHAT          = "https://discord.com/api/webhooks/1549073045807964263/3fwxUGRWOF1Db1iA1Q7bHBmIzIBs44He_DLtDiPYTEIAXMSFFmEdh9BHDAPDEg4pUfln"
 -- local PROXY                 = "https://square-haze-a007.remediashop.workers.dev"
-local PROXY = "https://weyyy-proxy.gallungmarwan147.workers.dev"
+local PROXY                 = "https://weyyy-proxy.gallungmarwan147.workers.dev"
 local SCRIPT_ACTIVE         = false
 
 -- Per-webhook identity (nama + avatar masing-masing)
 local WH_IDENTITY = {
     fish      = { name = "ForkyHUB — Secret Fish",   avatar = "https://www.image2url.com/r2/default/images/1777666815405-eb5a3d95-9946-4914-b8aa-985e8f672557.png" },
+    chat      = { name = "ForkyHUB — Chat Log",      avatar = "https://www.image2url.com/r2/default/images/1777666815405-eb5a3d95-9946-4914-b8aa-985e8f672557.png" },
 }
 
 -- ============================================================
@@ -698,6 +701,27 @@ end
 --  CHAT PARSING & DETECTION
 -- ============================================================
 
+local function SendChatLog(senderName, message)
+    if not SCRIPT_ACTIVE or not message or message == "" then return end
+    if not WEBHOOK_CHAT or WEBHOOK_CHAT == "" then return end
+
+    local player   = FindPlayer(senderName)
+    local thumbUrl = player and (AvatarCache[player.UserId] or GetAvatarUrl(player)) or nil
+    local displaySender = senderName
+    if player and UidToCanonicalName[player.UserId] then
+        displaySender = UidToCanonicalName[player.UserId]
+    end
+
+    PostWebhook(WEBHOOK_CHAT, {
+        username   = WH_IDENTITY.chat.name,
+        avatar_url = WH_IDENTITY.chat.avatar,
+        embeds = { BuildEmbed("💬 CHAT LOG", nil, 5793266, {
+            BuildFieldContent("👤", "Player",  "**" .. displaySender .. "**", true),
+            BuildFieldContent("💬", "Message", message,                        false),
+        }, nil, thumbUrl, "ForkyHUB — Chat Log") },
+    })
+end
+
 local function ParseChat(rawMsg)
     local msg = StripTags(rawMsg)
     msg = string.gsub(msg, "^%[Server%]:%s*", "")
@@ -800,9 +824,12 @@ local function HookChat()
     if TextChatService then
         TextChatService.MessageReceived:Connect(function(msg)
             local text = msg.Text or ""
+            local senderName = msg.TextSource and msg.TextSource.Name or "Unknown"
 
             if msg.TextSource == nil then
                 CheckAndSend(text)
+            else
+                SendChatLog(senderName, StripTags(text))
             end
         end)
     end
@@ -814,11 +841,14 @@ local function HookChat()
             onMessage.OnClientEvent:Connect(function(d)
                 if not (d and d.Message) then return end
                 local text = d.Message
+                local sender = d.FromSpeaker or d.SpeakerName or "Unknown"
 
                 local lowerMsg = string.lower(text)
                 local isServer = string.find(lowerMsg, "%[server%]") or string.find(lowerMsg, "obtained")
                 if isServer then
                     CheckAndSend(text)
+                else
+                    SendChatLog(sender, StripTags(text))
                 end
             end)
         end
